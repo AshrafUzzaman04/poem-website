@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+body {
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .search {
+    margin: 0px 20px;
+  }
+  .poem_section > .container > .o-grid-col > .o-vr_12x > .c-feature > .c-feature-bd > .isActive {
+    font-size: 16px !important;
+  }
+}
+
+.header_container {
+  padding: 0;
+  margin: 0;
+  background-color: #ccd7d1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.534);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.534);
+}
+
+.header_container > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_container > header > .logo_div .active-pink-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  -webkit-box-shadow: 0 1px 0 0 #f48fb1;
+          box-shadow: 0 1px 0 0 #f48fb1;
+}
+
+.header_container > header > .logo_div .active-pink input[type="text"] {
+  border-bottom: 1px solid #f48fb1;
+  -webkit-box-shadow: 0 1px 0 0 #f48fb1;
+          box-shadow: 0 1px 0 0 #f48fb1;
+}
+
+.header_container > header > .logo_div .active-purple-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #ce93d8;
+  -webkit-box-shadow: 0 1px 0 0 #ce93d8;
+          box-shadow: 0 1px 0 0 #ce93d8;
+}
+
+.header_container > header > .logo_div .active-purple input[type="text"] {
+  border-bottom: 1px solid #ce93d8;
+  -webkit-box-shadow: 0 1px 0 0 #ce93d8;
+          box-shadow: 0 1px 0 0 #ce93d8;
+}
+
+.header_container > header > .logo_div .active-cyan-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  -webkit-box-shadow: 0 1px 0 0 #4dd0e1;
+          box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.header_container > header > .logo_div .active-cyan input[type="text"] {
+  border-bottom: 1px solid #4dd0e1;
+  -webkit-box-shadow: 0 1px 0 0 #4dd0e1;
+          box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.header_container > header > .logo_div .active-cyan .fa,
+.header_container > header > .logo_div .active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+.header_container > header > .logo_div .active-purple .fa,
+.header_container > header > .logo_div .active-purple-2 .fa {
+  color: #ce93d8;
+}
+
+.header_container > header > .logo_div .active-pink .fa,
+.header_container > header > .logo_div .active-pink-2 .fa {
+  color: #f48fb1;
+}
+
+.header_container > header > .logo_div > img {
+  width: 60px;
+  height: 60px;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control {
+  background-color: #eee5e0 !important;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control::-webkit-input-placeholder {
+  color: black;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control:-ms-input-placeholder {
+  color: black;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control::-ms-input-placeholder {
+  color: black;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control::placeholder {
+  color: black;
+}
+
+.header_container > header > .search > .input-group > .form-inline > .form-control:focus {
+  border-color: #88a18b;
+  -webkit-box-shadow: inset 0 0 0 1px #88a18b;
+          box-shadow: inset 0 0 0 1px #88a18b;
+}
+
+.header_container > header > .manubar_side {
+  /* The sidebar menu */
+  /* The sidebar links */
+  /* When you mouse over the navigation links, change their color */
+  /* Position and style the close button (top right corner) */
+  /* The button used to open the sidebar */
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+}
+
+.header_container > header > .manubar_side .sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #485d58;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.header_container > header > .manubar_side .sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #eee5e0;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header_container > header > .manubar_side .sidebar a:hover {
+  color: #ffffff;
+}
+
+.header_container > header > .manubar_side .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.header_container > header > .manubar_side .openbtn {
+  font-size: 34px;
+  cursor: pointer;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+}
+
+.header_container > header > .manubar_side .openbtn > ion-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.header_container > header > .manubar_side #main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  /* If you want a transition effect */
+}
+
+@media screen and (max-height: 450px) {
+  .header_container > header > .manubar_side .sidebar {
+    padding-top: 15px;
+  }
+  .header_container > header > .manubar_side .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.hero_section {
+  background: rgba(0, 0, 0, 0.623) url("/images/The world is mine desktop wallpaper background .png");
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  font-family: "Courgette", cursive;
+  padding: 80px 0;
+}
+
+.hero_section > h1 {
+  color: #eee5e0;
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+
+.hero_section > .mediPlayer {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.poem_section {
+  padding: 50px 0;
+  background-color: #eee5e0;
+  text-align: center;
+}
+
+.poem_section > h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Itim", cursive;
+}
+
+footer {
+  background-color: #485d58;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer > h6 {
+  color: #fff5f0;
+  margin: 0;
+  padding: 0;
+}
+
+footer > h6 > .copyright {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
