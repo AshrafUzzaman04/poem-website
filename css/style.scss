@@ -9,6 +9,7 @@
 }
 body {
   background-color: white;
+  position: relative;
 }
 
 @media only screen and (max-width: 500px) {
@@ -195,11 +196,6 @@ body {
     text-align: center;
     font-family: "Courgette", cursive;
   }
-
-  > .mediPlayer {
-    text-align: center;
-    margin-top: 35px;
-  }
 }
 .poem_section {
   padding: 50px 0;
@@ -222,5 +218,25 @@ footer {
     > .copyright {
       font-family: Arial, Helvetica, sans-serif;
     }
+  }
+}
+.mediPlayer {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fafafa9f;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #ffffff;
   }
 }
